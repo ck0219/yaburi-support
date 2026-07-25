@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>야부리 고객지원</title>
+<style>
+  :root{
+    --pink:#E68FA6; --deep:#C76B83; --bg:#FDF0F3; --chip:#FBE5EA;
+    --text:#3a2b30; --muted:#7d6a70; --card:#fff; --line:#f0dfe4;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#1c1519; --card:#261d22; --text:#f3e8ec; --muted:#b7a3aa;
+           --chip:#3a2b32; --line:#3d2f35; --deep:#f0a8bd; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+       font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",
+                   "Noto Sans KR",system-ui,sans-serif;
+       line-height:1.75;-webkit-text-size-adjust:100%}
+  .wrap{max-width:680px;margin:0 auto;padding:28px 20px 64px}
+  header{text-align:center;padding:28px 0 20px}
+  .logo{width:64px;height:64px;border-radius:20px;margin:0 auto 14px;
+        background:linear-gradient(145deg,#f0a8bd,var(--pink));
+        display:flex;align-items:center;justify-content:center;font-size:30px}
+  h1{font-size:26px;margin:0 0 6px;color:var(--deep);letter-spacing:-.4px}
+  .sub{color:var(--muted);font-size:15px;margin:0}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+        padding:20px 22px;margin:16px 0}
+  h2{font-size:17px;margin:0 0 14px;color:var(--deep);letter-spacing:-.2px}
+  .mail{display:inline-block;background:var(--pink);color:#fff;text-decoration:none;
+        font-weight:600;padding:13px 26px;border-radius:999px;margin-top:4px}
+  .mail:hover{filter:brightness(.95)}
+  .note{color:var(--muted);font-size:14px;margin:12px 0 0}
+  details{border-top:1px solid var(--line);padding:13px 0}
+  details:first-of-type{border-top:0;padding-top:0}
+  summary{cursor:pointer;font-weight:600;font-size:15.5px;list-style:none;
+          display:flex;justify-content:space-between;align-items:center;gap:12px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--pink);font-size:20px;font-weight:400;flex:none}
+  details[open] summary::after{content:"−"}
+  details p{margin:10px 0 2px;color:var(--muted);font-size:14.5px}
+  dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:9px 16px;font-size:14.5px}
+  dt{color:var(--muted);white-space:nowrap}
+  dd{margin:0;word-break:break-word}
+  .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
+  .links a{background:var(--chip);color:var(--deep);text-decoration:none;
+           padding:9px 16px;border-radius:999px;font-size:14px;font-weight:600}
+  footer{text-align:center;color:var(--muted);font-size:13px;margin-top:32px;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="logo">💬</div>
+    <h1>야부리 고객지원</h1>
+    <p class="sub">문의사항이 있으시면 언제든 연락해 주세요.</p>
+  </header>
+
+  <div class="card" style="text-align:center">
+    <h2>문의하기</h2>
+    <a class="mail" href="mailto:andenmont@gmail.com?subject=%5B%EC%95%BC%EB%B6%80%EB%A6%AC%5D%20%EB%AC%B8%EC%9D%98">andenmont@gmail.com</a>
+    <p class="note">평일 기준 1~2일 이내에 답변드립니다.<br>
+      앱에서 겪으신 문제는 사용 중인 기기와 상황을 함께 적어주시면 더 빠르게 도와드릴 수 있어요.</p>
+  </div>
+
+  <div class="card">
+    <h2>자주 묻는 질문</h2>
+
+    <details>
+      <summary>계정을 삭제하고 싶어요</summary>
+      <p>앱에서 <b>내 둥지 → 설정 → 회원 탈퇴</b>를 눌러주세요. 두 번의 확인을 거치면 계정과
+         작성하신 게시물·사진·메시지가 서버에서 완전히 삭제되며, 삭제된 정보는 복구할 수 없습니다.</p>
+    </details>
+
+    <details>
+      <summary>불쾌한 사용자를 신고하거나 차단하고 싶어요</summary>
+      <p>채팅방·게시물·프로필 화면의 <b>⋯ 메뉴</b>에서 <b>신고하기</b> 또는 <b>차단하기</b>를 선택하세요.
+         차단한 사용자는 <b>설정 → 차단 관리</b>에서 다시 해제할 수 있습니다.
+         신고가 누적된 사용자는 자동으로 이용이 제한됩니다.</p>
+    </details>
+
+    <details>
+      <summary>위치 정보를 끄고 싶어요</summary>
+      <p><b>설정 → 위치 공유</b>를 끄시면 저장된 위치 정보가 즉시 삭제되고 더 이상 수집하지 않습니다.
+         위치를 공유하시는 동안에도 다른 분들에게는 좌표가 아닌 <b>거리(km)</b>로만 표시됩니다.</p>
+    </details>
+
+    <details>
+      <summary>비밀번호를 잊어버렸어요</summary>
+      <p>야부리는 아이디와 비밀번호로만 가입하며 이메일 주소를 받지 않기 때문에, 자동 재설정 메일을
+         보내드릴 수 없습니다. 위 문의 이메일로 <b>가입하신 아이디와 닉네임</b>을 알려주시면
+         본인 확인 후 도와드리겠습니다.</p>
+    </details>
+
+    <details>
+      <summary>'알'은 무엇인가요? 돈을 내야 하나요?</summary>
+      <p>알은 야부리 안에서만 쓰는 가상 재화로, <b>출석 체크와 앱 활동으로만 얻을 수 있습니다.</b>
+         현금으로 구매하거나 현금으로 바꿀 수 없으며, 게임 참가와 일부 기능에 사용됩니다.</p>
+    </details>
+
+    <details>
+      <summary>앱이 느리거나 화면이 멈춰요</summary>
+      <p>먼저 앱을 완전히 종료했다가 다시 실행해 주세요. 그래도 계속된다면 앱을 최신 버전으로
+         업데이트한 뒤, 문제가 생긴 화면과 기기 정보(예: iPhone 14 Pro, iOS 26)를 적어
+         문의 이메일로 보내주시면 확인하겠습니다.</p>
+    </details>
+  </div>
+
+  <div class="card">
+    <h2>약관 및 정책</h2>
+    <div class="links">
+      <a href="https://vnmfxxiezzfxbkkmtrwv.supabase.co/storage/v1/object/public/legal/terms_of_service.txt">이용약관</a>
+      <a href="https://vnmfxxiezzfxbkkmtrwv.supabase.co/storage/v1/object/public/legal/privacy_policy.txt">개인정보처리방침</a>
+      <a href="https://vnmfxxiezzfxbkkmtrwv.supabase.co/storage/v1/object/public/legal/location_terms.txt">위치기반서비스 이용약관</a>
+    </div>
+    <p class="note">야부리는 만 19세 이상 성인만 이용할 수 있는 서비스입니다.</p>
+  </div>
+
+  <div class="card">
+    <h2>운영자 정보</h2>
+    <dl>
+      <dt>상호</dt><dd>레비뉴그리드</dd>
+      <dt>대표자</dt><dd>김태수</dd>
+      <dt>사업자등록번호</dt><dd>383-23-02391</dd>
+      <dt>주소</dt><dd>경기도 고양시 덕양구 꽃마을로 34, 8층 817호(향동동, 향동dmc스타팰리스)</dd>
+      <dt>이메일</dt><dd>andenmont@gmail.com</dd>
+    </dl>
+  </div>
+
+  <footer>© 2026 레비뉴그리드. All rights reserved.</footer>
+
+</div>
+</body>
+</html>
