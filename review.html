@@ -39,6 +39,12 @@ th{background:#f7f5fb;font-weight:700;color:#2b1a63}
 .note{font-size:13.5px;color:#8b8595;margin-top:10px;word-break:keep-all}
 .chk{background:#fff;border:1px solid #e6e3ec;padding:18px 22px;margin-top:12px}
 .chk strong{color:#2b1a63}
+.shots{display:flex;gap:18px;margin-top:18px;flex-wrap:wrap}
+.shot{flex:1;min-width:210px;max-width:270px}
+.shot img{width:100%;height:auto;border:1px solid #e6e3ec;border-radius:8px;display:block}
+.cap{font-size:13px;color:#6b6579;margin-top:8px;line-height:1.6;word-break:keep-all}
+.cap b{color:#2b1a63}
+figure{margin:0}
 footer{margin-top:64px;padding-top:28px;border-top:1px solid #e6e3ec;font-size:12.5px;color:#8b8595;line-height:2}
 @media(max-width:600px){.wrap{padding:48px 20px 72px}h1{font-size:23px}}
 </style>
@@ -76,10 +82,26 @@ footer{margin-top:64px;padding-top:28px;border-top:1px solid #e6e3ec;font-size:1
     <p>야부리는 <strong>익명 1:1 채팅</strong>이 주된 기능인 소셜 애플리케이션입니다.
     게임은 대화 상대와 함께 즐기는 부가 콘텐츠이며, 게임을 전혀 이용하지 않아도
     서비스의 주된 기능을 모두 사용할 수 있습니다.</p>
-    <p>등급분류를 신청하는 게임물은 <strong>11종</strong>입니다. 게임별 규칙·조작·인원은 아래 페이지에
-    정리해 두었습니다.</p>
+    <p>등급분류를 신청하는 게임물은 <strong>11종</strong>이며, 앱의 아케이드 화면에 있는 게임이
+    그 11종의 전부입니다.</p>
+    <div class="shots">
+      <figure class="shot">
+        <img src="./img/arcade-lobby.jpg" alt="야부리 아케이드 목록 — 대전 5종, 혼자하기 6종">
+        <p class="cap"><b>야부리 아케이드</b><br>
+        위쪽 <b>대전</b> 5종(사천성 · 오목 · 맞고 · 윷놀이 · 라이어게임),
+        아래쪽 <b>혼자하기</b> 6종(야부리타워 · 브릭 · 버블 · 알콩달콩 · 블록 퍼즐 · 팡).
+        <b>대전은 전부 무료</b>임을 화면에 표시하고 있습니다.</p>
+      </figure>
+      <figure class="shot">
+        <img src="./img/onboarding-age.jpg" alt="가입 화면 — 만 19세 이상 확인">
+        <p class="cap"><b>가입 화면</b><br>
+        나이 입력이 <b>필수</b>이며 만 19세 미만은 가입할 수 없습니다.
+        <b>“만 19세 이상 성인”</b> 동의도 필수 항목입니다.</p>
+      </figure>
+    </div>
+    <p class="note">· 이번에 신청하지 않는 게임 7종은 이 목록에 나타나지 않습니다(아래 4절 ④항).</p>
     <div class="box">
-      <strong>게임 안내 (규칙 · 조작 · 유료 요소)</strong>
+      <strong>게임별 규칙 · 조작 · 유료 요소</strong>
       <p><a href="./games.html">야부리 아케이드 — 게임 안내 보기</a></p>
     </div>
   </section>
@@ -104,6 +126,26 @@ footer{margin-top:64px;padding-top:28px;border-top:1px solid #e6e3ec;font-size:1
     </div>
     <p class="note">· 알의 주된 용도는 <strong>채팅</strong>입니다 — 새로운 상대와 첫 대화를 열 때 사용합니다.<br>
     · 확률형 아이템(뽑기)이 없고, 게임 내 광고를 게재하지 않습니다.</p>
+
+    <h3>화면으로 보는 차이</h3>
+    <p>같은 앱의 두 게임 시작 화면입니다. 화투 게임과 그 밖의 게임이 어떻게 다른지
+    한눈에 보실 수 있습니다.</p>
+    <div class="shots">
+      <figure class="shot">
+        <img src="./img/matgo-intro.jpg" alt="맞고 시작 화면 — FREE PLAY, 참가비 없음">
+        <p class="cap"><b>맞고 (화투)</b><br>
+        <b>FREE PLAY</b>로 표시되고 재화 잔액이 아예 나오지 않습니다.
+        아래에 <b>“참가비 없음 · 알이 들지 않아요”</b>라고 적혀 있습니다.</p>
+      </figure>
+      <figure class="shot">
+        <img src="./img/solo-intro.jpg" alt="야부리타워 시작 화면 — 무료 5판 남음">
+        <p class="cap"><b>야부리타워 (혼자 하는 게임)</b><br>
+        이쪽은 <b>INSERT EGG</b>와 잔액이 표시되고
+        <b>“오늘 무료 5판 남음”</b>이 안내됩니다. 이용 횟수에 대한 요금입니다.</p>
+      </figure>
+    </div>
+    <p class="note">· 화투 게임에는 잔액 표시 자체가 없습니다. 이용 횟수를 차감하지도 않습니다.<br>
+    · 두 화면 모두 실제 앱을 촬영한 것이며, 별도의 편집을 하지 않았습니다.</p>
   </section>
 
   <section>
@@ -111,14 +153,24 @@ footer{margin-top:64px;padding-top:28px;border-top:1px solid #e6e3ec;font-size:1
     <p>위 내용을 화면에서 확인하실 수 있는 경로를 적었습니다.</p>
 
     <div class="chk">
-      <strong>① 화투 게임에 유료 재화가 관여하지 않는 것</strong>
+      <strong>① 화투 게임(맞고)에 유료 재화가 관여하지 않는 것</strong>
       <ol>
         <li><strong>아케이드</strong> 탭에서 <strong>맞고</strong> 선택</li>
-        <li>시작 화면에 <strong>‘FREE PLAY’</strong>로 표시되며, 재화 잔액이나 참가비가 표시되지 않습니다.</li>
-        <li>여러 판을 이용하셔도 우측 상단 알 잔액이 <strong>변하지 않습니다.</strong></li>
-        <li>판이 끝나면 ‘다음 판 / 그만하기’를 묻습니다. 양쪽이 모두 동의해야 다음 판이 시작되며,
-            대전의 종료 조건을 미리 정하는 기능은 없습니다.</li>
+        <li>시작 화면에 <strong>‘FREE PLAY’</strong>로 표시됩니다. 참가비 안내도, 재화 잔액도 없습니다.</li>
+        <li>몇 판을 이용하셔도 알 잔액이 <strong>1도 변하지 않습니다.</strong>
+            들어갈 때 내는 것도, 이겨서 받는 것도, 져서 잃는 것도 없습니다.</li>
+        <li>판이 끝나면 <strong>‘다음 판 / 그만하기’</strong>를 묻습니다.
+            <strong>양쪽이 모두 다음 판을 눌러야</strong> 이어지고, 한 사람이라도 그만두면 끝납니다.
+            즉 한 판 한 판이 그때마다 새로 합의되는 독립된 판이며,
+            <strong>미리 정해 둔 목표 점수나 판수, 종료 조건이 없습니다.</strong></li>
       </ol>
+      <p class="note">· 화면 위쪽에 <strong>‘몇 판째 · 누적’</strong>이 표시됩니다. 이는 화투 규칙상의 점수를
+      그 방에서 몇 판 두었는지와 함께 보여주는 <strong>기록 표시</strong>입니다.<br>
+      · 이 점수는 <strong>유료 재화로 살 수 없고, 무엇으로도 바꿀 수 없으며, 방을 나가면 사라집니다.</strong>
+      점수가 얼마가 되든 게임 진행이나 종료에 영향을 주지 않고, 이를 근거로 재화가 오가지 않습니다.<br>
+      · 개발 과정에서 “같은 점수로 시작해 주고받다가 먼저 0이 되면 지는” 진행 형식을 만들었다가,
+      유료 재화가 개입하지 않더라도 형식이 오해를 살 수 있다고 판단하여 신청 전에 제거하였습니다.
+      (문의 15항)</p>
     </div>
 
     <div class="chk">
